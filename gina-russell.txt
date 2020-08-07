@@ -3,42 +3,207 @@
 Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
 
     1. What is Semantic HTML? 
+    These are HTML tags that provide meaning to the mark up. 
+    These include tags like main, section, article, nav, header, and footer. These aid
+    in accessibility, make your code easier for another developer or a later you to
+    understand your code, and increase Search Engine Optimization.
+
     2. What is HTML used for? 
+    HTML is one of three front end web technologies and is used to provide the structure 
+    or raw materials for the web page. It is a mark up language not a programming one.
+
     3. What is an attribute and where do we put it? 
+    An attribute is an extra piece of information either required or added for more info
+    to a particular HTML element. It is added inside the opening tag. An example would be
+    the href attribute in a link tag <a href="#home">Home</a>
+
     4. What is the h1 tag used for? How many times should I use it on a page?
+    An h1 tag is a heading tag, the most important of the six types (h1...h6)and is
+    used to indicate the most important heading on a page. There should only be one
+    h1 on each page to indicate the main idea of the page, this helps with SEO.
+
     5. Name two tags that have required attributes
+    The anchor tag <a> requires a href attribute for a link and the <img> tag requires a src 
+    attribute for an image.
+
     6. What do we put in the head of our HTML document? 
+    The head of our HTML document contains meta data about the page. It contains a title
+    which appears in the webpage tab and may contain information about language, viewport 
+    size, character set, and link tags to add external CSS style sheets.
+
     7. What is an id? 
+    An id is an attribute that provides a unique identifier used for styling or same page 
+    navigation. It is used as a CSS selector using the syntax #id-name.
+
     8. What elements can I add an id to? 
+    You can add an id to any element's opening tag. 
+    An example would be <h1 id="title">My Page</h1>
+
     9. How many times can I use the same id on a page? 
+    Because it serves as a unique identifier, there should only be one of each name on a page.
+
     10. What is a class? 
+    A class serves as identifier of one or more elements on a page. It is added as an
+    optional attribute to the opening tag of an element. 
+
     11. What elements can I add a class to? 
+    You may add the class attribute to any opening element's tag.
+    An example would be <section class="recipe"></section>
+
     12. How many times can I use the same class on a page? 
+    You can use the same class as many times as you would like to.
+    This allows common styling to be shared across multiple types of elements.
+
     13. How do I get my link to open in a new tab?
+    To get the link to open in a new tab, you can add the attribute target="_blank"
+    to the inside of the a tag. An example would be 
+    <a href="https://lambdaschool.com" target="_blank">lambdaschool.com</a>
+
     14. What is the alt attribute in the image tag used for? 
+    The alt attribute allows for a description of the image. This is useful for 
+    accessibility for screen readers or for identification if the image doesn't load.
+
     15. How do I reference an id?
+    To reference an id, you use #id-name. 
+
     16. What is the difference between a section and a div
+    A section is an example of a semantic HTML tag instead of just a presentational
+    one. A section indicates content grouped with meaning on the page. A div allows
+    content to be grouped for styling purposes. You might use a section to indicate
+    each new recipe on your cooking website but use a div to group the entire content 
+    of the page or group tags within the section to place in columns.
+
     17. What is CSS used for? 
+    CSS is Cascading Style Sheets and it is used for layout and design on a page. 
+
     18. How to we select an element? Example - every h2 on the page
+    To select an element, we just use the element name when creating CSS rules. 
+    To select an h2, we would use the syntax:
+    h2 {
+        property:value
+    }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class and id are two different identifiers/types of CSS selectors. You would use an id, 
+    when you want to apply a unique style to one particular item on a page. Classes allow
+    different elements to be styled with the same style rules. For example, you may want all
+    paragraphs and a links to have the same font-family and color.
+
     20. How do we select classes in CSS?
+    In CSS we select classes using the syntax .class-name.
+
     21. How do we select a p element with a single class of “human””?
+    We would select the element with p.human
+
     22. What is a parent child selector? When would this be useful? 
+    A parent child selector is something like the following:
+    ul li {
+
+    }
+    This allows us to select for all the list items that are children of the unorderer
+    list.
+
     23. How do you select all links within a div with the class of sidebar?
+    The selector for all links within a div with the class of sidebar would be
+    div.sidebar a{
+
+    }
+
     24. What is a pseudo selector?
+    A pseudo selector allows us to select for a specific state of an element.
+    This can allow us to apply style to a link element on a mouse hover.
+    Ex. a:hover
+    
     25. What do we use the change the spacing between lines?
+    To change the spacing between lines, we can use the line-height property. It 
+    is set with a ratio value which is related to the font size.
+
     26. What do we use to change the spacing between letters?
+    To change the spacing between letters, we can use the letter-spacing property. 
+    We can give this a value in px.
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    We can change the capitalization with CSS using the text-transform property. 
+    Valid values include uppercase, lowercase, and capitalize.
+
     28. How do I add a 1px border around my div that is dotted and black?
+    I can use the border property and give it all three values in the same rule.
+    div {
+        border: 1px dotted #000000;
+    }
+    
     29. How do I select everything on the page? 
+    I can select everything on a page with the universal selector. 
+    * {
+
+    }
+
     30. How do I write a comment in CSS?
+    Comments in CSS are between /* This is a comment */
+
     31. How do I find out what file I am in, when I am using the command line? 
+    I can find out the folder or directory by using the command pwd, which will give
+    me my working directory.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    I can see the files and folders in my current folder by using the ls command.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    I can remove a file at command line by using rm filename.ext
+    This is dangerous because there is no "are you sure?" warning, and it is not retrievable
+    from your trash.
+
     34. Why should I use version control? 
+    Version control allows us to take snapshots during development over time. If need be
+    I can revert to an earlier version, without having to save this earlier version as
+    a separate file with a different filename. It is also useful to allow developers to work
+    on the same piece of software simultaneously. Each one can work on their own forked
+    branch which can be merged back to the master later. It allows a member of the team
+    to try something new on a side branch without braking a working application.
+
     35. How often should I commit to github?
+    I should commit often to track my progress on each piece of a project.
+
     36. What is the command we would use to push our repo up to github? 
+    If I am using a branch I created in my cloned repository, the first time I push to
+    github I should use: git push -u origin gina-russell
+
     37. Walk me through Lambda's git flow. 
+    My workflow at Lambda:
+    On GitHub
+    Step 1: Fork a repository to my github account, and verify with the title.
+    Step 2: Add my TL as a collaborator on my project's repository using the Settings
+    and Manage Access options.
+    Step 3: Copy the link from the Code button to Clone the repository
+
+    On my computer
+    Step 4: Navigate to the directory where I want to clone my project 
+    using the CLI cd command
+    Step 5: Use the command git clone repository_url at the terminal prompt, using
+    the copied url for the repository_url
+    Step 6: Create a branch from the master from my repository using the command
+    git checkout -b "gina-russell"
+    Step 7: Verify my branch using the command git branch
+    Step 8: Work on my project by creating files or folders at command line using the
+    touch filename.ext command or the mkdir foldername command. 
+    Step 9: Use git status often to check my progress.
+    Step 10: Use git add . to start tracking all files and folders created or to add the
+    information to the tracked version after making changes on a next step.
+    Step 11: Use git commit -m "insert a meaningful message about this saved snapshot" to 
+    save a snapshot version of the project. These commit stages are what can be used
+    to revert to an earlier stage if need be.
+    Step 12: Use git push to push the changes back to the github cloud storage using
+    the command git push -u origin gina-russell with the first push and then just git push 
+    for subsequent changes.
+    Step 13: Repeat Steps 8-12 until project is complete.
+
+    On GitHub
+    Step 14: Create a Pull Request, making sure the comparison for the pull is with
+    my forked master, not The Lambda School original repository (I must change this 
+    before I submit because the original Lambda School version will appear as the default choice.)
+    Step 15: Add my TL as the Reviewer for the request.
+    Step 16: I'm done, My TL will review the code and merge the request after the assignment is reviewed.
+
 
 Stretch Questions
 
