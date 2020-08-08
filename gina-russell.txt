@@ -82,7 +82,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     To select an element, we just use the element name when creating CSS rules. 
     To select an h2, we would use the syntax:
     h2 {
-        property:value
+        property:value;
     }
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
@@ -161,7 +161,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     a separate file with a different filename. It is also useful to allow developers to work
     on the same piece of software simultaneously. Each one can work on their own forked
     branch which can be merged back to the master later. It allows a member of the team
-    to try something new on a side branch without braking a working application.
+    to try something new on a side branch without breaking a working application.
 
     35. How often should I commit to github?
     I should commit often to track my progress on each piece of a project.
@@ -201,7 +201,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     On GitHub
     Step 14: Create a Pull Request, making sure the comparison for the pull is with
-    my forked master, not The Lambda School original repository (I must change this 
+    my forked master, not the Lambda School original repository (I must change this 
     before I submit because the original Lambda School version will appear as the default choice.)
     Step 15: Add my TL as the Reviewer for the request.
     Step 16: I'm done, My TL will review the code and merge the request after the assignment is reviewed.
@@ -210,10 +210,32 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    A block level element takes up the width of the whole screen while an inline only
+    takes up enough width for the content. 
+
     2. What happens when an element is positioned absolutely? 
+    If an element is positioned absolutely, it is positioned relative to its positioned parent,
+    instead of being positioned relative to the viewport.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    To make an element be able to have a set width, it's display property needs to be set to inline-block.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Three elements that are display block by default are p, h1, and div. Two elements that are display inline by default
+    are a and span. An element that has the default value of inline-block is an input element.
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, 
+    how do we make all elements respect the width we've given them? 
+    The box model is the fundamental idea that all HTML elements can be thought of as boxes on the screen.
+    The innermost box holds the content. Just outside of the content is the padding, which is
+    a clear buffer between the content and the border. The border is the third level as you move out.
+    The outer level of the box model is the margin which is the transparent buffer area between
+    the element and the other elements around it. 
+    The problem with the box model is that it is not intuitive when setting the sizes for 
+    your elements, that the size only includes the content. Any other layers increase the
+    element's overall size and create layout headaches. The fix for the box model is to change
+    the element's box-sizing property from the default content-box to border-box so that the
+    dimensions of the element will include the content, padding, and border.
 
 
 
