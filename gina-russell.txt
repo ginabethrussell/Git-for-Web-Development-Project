@@ -220,7 +220,8 @@ Stretch Questions
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
     To make an element be able to have a set width, it's display property needs to be set to inline-block.
 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element 
+    that is display inline-block by default.
     Three elements that are display block by default are p, h1, and div. Two elements that are display inline by default
     are a and span. An element that has the default value of inline-block is an input element.
 
